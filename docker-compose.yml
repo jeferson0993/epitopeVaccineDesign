@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  phase3_pipeline:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./logs:/app/logs
